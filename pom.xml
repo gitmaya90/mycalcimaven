@@ -38,19 +38,6 @@
 <scope>test</scope>
 </dependency>
 </dependencies>
-  <project>
-    ...
-    <distributionManagement>
-        <repository>
-            <id>my-repo</id>
-            <url>http://my.repository.url/repo</url>
-        </repository>
-        <snapshotRepository>
-            <id>my-snapshot-repo</id>
-            <url>http://my.repository.url/snapshot-repo</url>
-        </snapshotRepository>
-    </distributionManagement>
-    ...
 </project>
 <build>
 <plugins>
@@ -112,6 +99,20 @@
 <goals>
 <goal>report</goal>
 </goals>
+  <project>
+    ...
+    <distributionManagement>
+        <repository>
+            <id>my-repo</id>
+            <url>http://my.repository.url/repo</url>
+        </repository>
+        <snapshotRepository>
+            <id>my-snapshot-repo</id>
+            <url>http://my.repository.url/snapshot-repo</url>
+        </snapshotRepository>
+    </distributionManagement>
+    ...
+</project>
 </execution>
 </executions>
 </plugin>
