@@ -9,7 +9,16 @@
 
   <name>Calculator</name>
   <url>http://www.example.com</url>
-
+ <distributionManagement>
+        <repository>
+            <id>my-repo</id>
+            <url>http://my.repository.url/repo</url>
+        </repository>
+        <snapshotRepository>
+            <id>my-snapshot-repo</id>
+            <url>http://my.repository.url/snapshot-repo</url>
+        </snapshotRepository>
+    </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
@@ -39,16 +48,7 @@
 </dependency>
 </dependencies>
   
-    <distributionManagement>
-        <repository>
-            <id>my-repo</id>
-            <url>http://my.repository.url/repo</url>
-        </repository>
-        <snapshotRepository>
-            <id>my-snapshot-repo</id>
-            <url>http://my.repository.url/snapshot-repo</url>
-        </snapshotRepository>
-    </distributionManagement>
+   
 </project>
 <build>
 <plugins>
